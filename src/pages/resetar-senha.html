@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .left-side {
+            width: 45%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-side h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            width: 45%;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .form-links {
+            margin-top: 10px;
+        }
+
+        .form-links a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .form-links a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Lado Esquerdo -->
+    <div class="left-side">
+        <h1>Recupere sua senha</h1>
+        <p>Digite seu email para recuperar a senha.</p>
+    </div>
+
+    <!-- Formulário de Recuperação de Senha -->
+    <div class="form-container">
+        <h2>Recuperação de Senha</h2>
+        <form>
+            <input type="email" class="input-field" id="email" placeholder="Digite seu email" required><br>
+
+            <!-- Botão para Recuperação de Senha -->
+            <button type="submit" class="login-btn">Recuperar senha</button>
+
+            <!-- Link para voltar ao login -->
+            <div class="back-link">
+                <a href="index.html">Voltar para a página de login</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
