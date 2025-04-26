@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Músicas</title>
+</head>
+<body>
+    <h1>Criação Musical 🌸</h1>
+    <form method="post">
+        <input type="text" name="titulo" placeholder="Título da música" required><br>
+        <textarea name="letra" placeholder="Escreva sua letra aqui..." required></textarea><br>
+        <select name="clima">
+            <option>Alegre</option>
+            <option>Calma</option>
+            <option>Feliz</option>
+            <option>Profunda</option>
+        </select><br>
+        <button type="submit">Salvar Música</button>
+    </form>
+
+    <hr>
+    <h2>Minhas composições:</h2>
+    {% for musica in musicas %}
+        <div style="margin-bottom: 20px;">
+            <strong>{{ musica.titulo }}</strong> ({{ musica.clima }})<br>
+            <small>{{ musica.data }}</small><br>
+            <pre>{{ musica.letra }}</pre>
+        </div>
+    {% endfor %}
+</body>
+</html>
+<!-- Compare this snippet from templates/console.html: -->
+<!-- <!DOCTYPE html>    
+ -->
+<!-- <html lang="pt-br">
+<head>    
+ -->

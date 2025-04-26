@@ -1,0 +1,154 @@
+/* ===============================
+ * Estilos para a página de Políticas (politicas.css)
+ * Baseado em index.css para consistência visual
+ * =============================== */
+
+/* ===============================
+ * Geral
+ * =============================== */
+ body {
+    font-family: 'Roboto', sans-serif; /* Fonte do index.css */
+    background-color: #f9f9f9; /* Cor de fundo do index.css */
+    color: #333; /* Cor de texto padrão do index.css */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+/* ===============================
+ * Container Principal (Caixa Branca)
+ * =============================== */
+.container { /* Usando .container como em termos.css e Bootstrap */
+    flex-grow: 1; /* Faz o container crescer para empurrar o footer para baixo */
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 40px auto; /* Centraliza horizontalmente e adiciona margem em cima/baixo */
+    padding: 30px; /* Espaçamento interno */
+    background-color: #fff; /* Fundo branco para o conteúdo (como .form-section) */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* ===============================
+ * Títulos e Texto dentro do .container
+ * =============================== */
+.container h1 {
+    color: #0e3e20; /* Verde escuro do header-section (index.css) */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.container h2 {
+    color: #34495e; /* Mantendo uma cor secundária para subtítulos */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.5rem;
+}
+
+.container p {
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto para melhor leitura */
+    color: #555; /* Cor de parágrafo um pouco mais suave */
+}
+
+.container ul,
+.container ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.container ul li,
+.container ol li {
+    margin-bottom: 8px;
+}
+
+/* ===============================
+ * Links dentro do .container
+ * =============================== */
+.container a {
+    color: #2ECC71; /* Verde dos links do formulário (index.css) */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.container a:hover {
+    color: #27ae60; /* Verde mais escuro no hover (como btn-login:hover) */
+    text-decoration: underline; /* Sublinhado no hover (como form-link:hover) */
+}
+
+/* ===============================
+ * Rodapé
+ * =============================== */
+footer {
+    background-color: #f1f1f1; /* Cor de fundo do footer (index.css) */
+    font-size: 12px; /* Tamanho da fonte do footer (index.css) */
+    color: #555; /* Cor do texto do footer (index.css) */
+    text-align: center; /* <<< CENTRALIZA O CONTEÚDO DO FOOTER >>> */
+    padding: 20px;
+    margin-top: 40px; /* Espaço acima do footer, ajustado para garantir visibilidade */
+    border-top: 1px solid #ddd; /* Linha separadora */
+    width: 100%; /* Garante que ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos específicos para elementos dentro do footer, se necessário */
+footer #language-selector {
+    margin-bottom: 15px; /* Adiciona espaço abaixo do seletor de idioma */
+}
+
+footer #language-selector label {
+    margin-right: 10px;
+    color: #555;
+}
+
+footer #language-selector select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer #language-selector select:focus {
+    outline: none;
+    border-color: #2ecc71;
+    box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.25);
+}
+
+footer p {
+    margin-bottom: 5px; /* Ajusta a margem entre os parágrafos do footer */
+}
+
+footer p:last-child {
+    margin-bottom: 0; /* Remove margem inferior do último parágrafo */
+}
+
+
+/* ===============================
+ * Responsividade
+ * =============================== */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 15px; /* Reduz margem lateral em telas menores */
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 11px; /* Ajuste leve se necessário */
+    }
+}

@@ -1,0 +1,136 @@
+/* ===============================
+ * Estilos para a página de Termos (termos.css)
+ * Baseado em politicas.css para consistência visual
+ * =============================== */
+
+/* ===============================
+ * Geral
+ * =============================== */
+ body {
+    font-family: 'Roboto', sans-serif; /* Fonte do politicas.css */
+    background-color: #f9f9f9; /* Cor de fundo do politicas.css */
+    color: #333; /* Cor de texto padrão do politicas.css */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+/* ===============================
+ * Container Principal (Caixa Branca)
+ * =============================== */
+.container {
+    flex-grow: 1; /* Faz o container crescer para empurrar o footer para baixo */
+    max-width: 800px; /* Largura máxima do conteúdo (igual politicas.css) */
+    margin: 40px auto; /* Centraliza horizontalmente e adiciona margem (igual politicas.css) */
+    padding: 30px; /* Espaçamento interno (igual politicas.css) */
+    background-color: #fff; /* Fundo branco (igual politicas.css) */
+    border-radius: 8px; /* Cantos arredondados (igual politicas.css) */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave (igual politicas.css) */
+}
+
+/* ===============================
+ * Títulos e Texto dentro do .container
+ * =============================== */
+.container h1 {
+    color: #0e3e20; /* Verde escuro do header-section (igual politicas.css) */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem; /* Tamanho igual politicas.css */
+}
+
+.container h2 {
+    color: #34495e; /* Cor secundária (igual politicas.css) */
+    margin-top: 40px;
+    margin-bottom: 15px; /* Ajustado para igualar politicas.css */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Cor da borda igual politicas.css */
+    font-size: 1.5rem; /* Tamanho igual politicas.css */
+}
+
+.container p {
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto (igual politicas.css) */
+    color: #555; /* Cor de parágrafo (igual politicas.css) */
+}
+
+.container ul,
+.container ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-left: 15px; /* Adicionado padding igual politicas.css */
+}
+
+.container ul li,
+.container ol li {
+    margin-bottom: 8px; /* Ajustado para igualar politicas.css */
+}
+
+/* ===============================
+ * Links dentro do .container
+ * =============================== */
+.container a {
+    color: #2ECC71; /* Verde dos links (igual politicas.css) */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.container a:hover {
+    color: #27ae60; /* Verde mais escuro no hover (igual politicas.css) */
+    text-decoration: underline; /* Sublinhado no hover (igual politicas.css) */
+}
+
+/* ===============================
+ * Rodapé
+ * =============================== */
+/* Aplicando ao seletor .footer que você tinha no termos.css original */
+.footer {
+    background-color: #f1f1f1; /* Cor de fundo (igual politicas.css) */
+    font-size: 12px; /* Tamanho da fonte (igual politicas.css) */
+    color: #555; /* Cor do texto (igual politicas.css) */
+    text-align: center; /* Centraliza o conteúdo (igual politicas.css) */
+    padding: 20px; /* Padding (igual politicas.css) */
+    margin-top: 40px; /* Margem superior (igual politicas.css) */
+    border-top: 1px solid #ddd; /* Linha separadora (igual politicas.css) */
+    width: 100%; /* Garante que ocupe toda a largura */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Se o seu HTML usar <footer class="footer">, estes estilos serão aplicados */
+.footer p {
+    margin-bottom: 5px; /* Ajusta a margem entre os parágrafos do footer */
+}
+
+.footer p:last-child {
+    margin-bottom: 0; /* Remove margem inferior do último parágrafo */
+}
+
+
+/* ===============================
+ * Responsividade
+ * =============================== */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 15px; /* Reduz margem lateral (igual politicas.css) */
+        padding: 20px; /* Reduz padding interno (igual politicas.css) */
+    }
+
+    .container h1 {
+        font-size: 1.8rem; /* Ajuste igual politicas.css */
+    }
+
+    .container h2 {
+        font-size: 1.3rem; /* Ajuste igual politicas.css */
+    }
+
+    .footer { /* Aplicando ao seletor .footer */
+        padding: 15px; /* Padding igual politicas.css */
+        font-size: 11px; /* Tamanho da fonte igual politicas.css */
+    }
+}
+
+/* ===============================
+ * Fim dos estilos para a página de Termos
+ * =============================== */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mistic Music</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .console {
+            background-color: #111;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .resposta {
+            margin-top: 20px;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="{{ url_for('static', filename='logo.png') }}" alt="Console Místico"></h1>
+    <div class="console">
+        <form method="POST">
+            <input type="text" name="comando" placeholder="Digite seu comando aqui...">
+            <button type="submit">Enviar</button>
+        </form>
+        {% if resposta %}
+        <div class="resposta">{{ resposta }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

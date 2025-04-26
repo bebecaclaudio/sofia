@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .header-section {
+    background-color: #C3EACB;
+    color: #0e3e20;
+  }
+  
+  .form-section {
+    background-color: #fff;
+  }
+  
+  .logo {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  .btn-login {
+    background-color: #2ECC71 !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .btn-login:hover {
+    background-color: #27ae60 !important;
+  }
+  
+  
+  .btn-login:hover {
+    background-color: #27ae60;
+  }
+  
+  .form-link {
+    color: #2ECC71;
+    text-decoration: none;
+  }
+  
+  .form-link:hover {
+    text-decoration: underline;
+  }
+  
+  .social-login {
+    text-align: center;
+  }
+  
+  .social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .btn-social {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-social:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .footer {
+    background-color: #f1f1f1;
+    font-size: 12px;
+    color: #555;
+  }
+  

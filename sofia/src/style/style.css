@@ -1,0 +1,227 @@
+/* Container da seção de vídeos */
+.video-section {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #EED7A1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Player principal */
+.video-container {
+    flex: 1;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 16px;
+}
+
+/* Lista lateral de vídeos */
+.video-list-container {
+    width: 320px;
+    min-width: 260px;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Estilo dos vídeos na lista */
+.video-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.video-item:hover {
+    background-color: #f0f0f0;
+}
+
+.video-item img {
+    width: 100px;
+    height: 75px;
+    margin-right: 12px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.video-item h3 {
+    font-size: 15px;
+    margin: 0 0 4px;
+    color: #333;
+}
+
+.video-item p {
+    font-size: 13px;
+    margin: 0;
+    color: #666;
+}
+
+/* Scroll customizado */
+.video-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.video-list-container::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+}
+
+.video-list-container::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container,
+    .video-list-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/* Estilo do botão de fechar */
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}   
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+    margin-bottom: 20px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make the buttons circular */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-button:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}
+
+.social-button i {
+    font-size: 20px; /* Adjust icon size as needed */
+}
+
+.shopee-link-container {
+    gap: 15px; /* Adds space between the icon and the button */
+  }
+  
+  .shopee-icon {
+    filter: invert(59%) sepia(58%) saturate(3917%) hue-rotate(343deg) brightness(100%) contrast(99%); /* Orange color filter */
+  }
+  
+.orange-button{
+    background-color: #FF5722; /* Orange background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-size: 16px; /* Font size for the button */
+    font-weight: bold; /* Bold text */
+    display: inline-flex; /* Align icon and text in a row */
+}
+
+.orange-button:hover {
+    text-decoration: none;
+    background-color: #e95e0d; /* Darker orange on hover */
+    color: white; /* White text color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    font-weight: bold; /* Bold text on hover */
+    font-size: 16px; /* Font size on hover */
+}
+/* Estilo do botão de fechar */
+
+.ifood-link-container {
+    gap: 15px; /* Adds space between the icon and the button */
+  }
+  
+  .ifood-icon {
+    /* You can add styling here if you want to change the icon's appearance */
+  }
+  
+
+
+.fa-whatsapp {
+    color: #25D366; /* WhatsApp green color */
+    font-size: 24px; /* Icon size */
+}
+.fa-instagram {
+    color: #C13584; /* Instagram purple color */
+    font-size: 24px; /* Icon size */
+}
+.fa-facebook {
+    color: #3b5998; /* Facebook blue color */
+    font-size: 24px; /* Icon size */
+}
+.fa-youtube {
+    color: #FF0000; /* YouTube red color */
+    font-size: 24px; /* Icon size */
+}
+.fa-tiktok {
+    color: #69C9D0; /* TikTok color */
+    font-size: 24px; /* Icon size */
+}
+.fa-pinterest {
+    color: #E60023; /* Pinterest red color */
+    font-size: 24px; /* Icon size */
+}
+.fa-x{
+    color: #FF0000; /* Close icon red color */
+    font-size: 24px; /* Icon size */
+}
+.fa-twitch {
+    color: #9146FF; /* Twitch purple color */
+    font-size: 24px; /* Icon size */
+}
+.fa-discord {
+    color: #7289DA; /* Discord blue color */
+    font-size: 24px; /* Icon size */
+}	
+.fa-devto {
+    color: #0A0A0A; /* Dev.to black color */
+    font-size: 24px; /* Icon size */
+}
+.fa-github {
+    color: #333; /* GitHub black color */
+    font-size: 24px; /* Icon size */
+}

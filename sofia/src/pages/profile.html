@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="/src/imgs/favicon.ico">
+    <link rel="stylesheet" href="../style/profile.css"> </head>
+<body>
+    <header class="header-section">
+        <img src="../imgs/logo.png" alt="Logo Sofia" class="logo mb-3" />
+    </header>
+
+    <main class="main-content">
+        <div class="left-column">
+            <div class="profile-picture-frame">
+                <img src="../imgs/user.jpg" alt="Foto de Perfil" />
+            </div>
+            <button type="button" class="btn btn-edit-profile">Editar Perfil</button>
+        </div>
+        <div class="center-column">
+            <h1>Timeline</h1>
+            <p>Aqui você pode adicionar o conteúdo da timeline do usuário.</p>
+        </div>
+        <div class="right-column">
+            <div class="friends-box">
+                <h3>Amigos/Contatos</h3>
+                <p>Lista de amigos ou contatos do usuário.</p>
+            </div>
+            <div class="fragments-box">
+                <h3>Fragmentos (Comunidades/Grupos)</h3>
+                <p>Espaço para exibir comunidades ou grupos de saberes.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div id="language-selector">
+                <label for="language">Idioma:</label>
+                <select id="language">
+                    <option value="pt">Português</option>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="de">Alemão</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">Japonês</option>
+                    <option value="zh">Chinês</option>
+                    <option value="ru">Russo</option>
+                    <option value="ar">Árabe</option>
+                    <option value="he">Hebraico</option>
+                    <option value="ro">Romeno</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ko">Coreano</option>
+                    <option value="tr">Turco</option>
+                    <option value="vi">Vietnamita</option>
+                    <option value="id">Indonésio</option>
+                    <option value="ms">Malaio</option>
+                    <option value="th">Tailandês</option>
+                    <option value="sw">Suaíli</option>
+                    <option value="nl">Holandês</option>
+                    <option value="pl">Polonês</option>
+                    <option value="cs">Tcheco</option>
+                    <option value="el">Grego</option>
+                    <option value="sv">Sueco</option>
+                    <option value="da">Dinamarquês</option>
+                    <option value="fi">Finlandês</option>
+                    <option value="no">Norueguês</option>
+                    <option value="hu">Húngaro</option>
+                    <option value="sk">Eslovaco</option>
+                    <option value="uk">Ucraniano</option>
+                    <option value="hr">Croata</option>
+                    <option value="sr">Sérvio</option>
+                    <option value="bg">Búlgaro</option>
+                    <option value="sl">Esloveno</option>
+                    <option value="et">Estoniano</option>
+                    <option value="lv">Letão</option>
+                    <option value="lt">Lituano</option>
+                    <option value="ga">Irlandês</option>
+                    <option value="mt">Maltês</option>
+                    <option value="is">Islandês</option>
+                    <option value="sq">Albanês</option>
+                    <option value="mk">Macedônio</option>
+                    <option value="bs">Bósnio</option>
+                    <option value="hy">Armênio</option>
+                    <option value="ka">Georgiano</option>
+                    <option value="az">Azerbaijano</option>
+                    <option value="km">Khmer</option>
+                    <option value="lo">Laosiano</option>
+                    <option value="my">Birmanês</option>
+                    <option value="ne">Nepalês</option>
+                    <option value="mn">Mongol</option>
+                    <option value="tl">Filipino</option>
+                    <option value="ps">Pashto</option>
+                    <option value="fa">Persa</option>
+                    <option value="ur">Urdu</option>
+                    <option value="ku">Curdo</option>
+                    <option value="am">Amárico</option>
+                     <option value="so">Somali</option>
+                    <option value="zu">Zulu</option>
+                    <option value="xh">Xhosa</option>
+                    <option value="la">Latim</option>
+                    <option value="tp">Tupi</option>
+                    <option value="gn">Guarani</option>
+                </select>
+                <script>
+                    document.getElementById('language').addEventListener('change', function () {
+                        var selectedLanguage = this.value;
+                        // Aqui você colocaria a lógica para redirecionar ou traduzir a página
+                        // Por exemplo:
+                        // window.location.href = '/'+selectedLanguage+'/login?lang=' + selectedLanguage;
+                        alert('Funcionalidade de tradução para ' + selectedLanguage + ' ainda não implementada.');
+                    });
+                </script>
+            </div>
+        <p class="mb-1">Desenvolvedores: Sofia 2025 | Versão 1.0.0</p>
+        <p class="m-0">&copy; Sofia 2025 | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

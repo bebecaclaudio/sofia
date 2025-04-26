@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para o cabeçalho (header) */
+.header-section {
+    background-color: #C3EACB;
+    color: #0e3e20;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+/* Estilos para a seção principal (main) */
+.main-content {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre as colunas */
+    align-items: flex-start;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e0f2f1;
+    margin-right: 20px; /* Adicionando margem direita */
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 20px; /* Adicionando margem direita */
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+.profile-picture-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2ECC71;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #cccccc;
+}
+
+.profile-picture-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.btn-edit-profile {
+    background-color: #2ECC71 !important;
+    color: #fff !important;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn-edit-profile:hover {
+    background-color: #27ae60 !important;
+}
+
+.form-link {
+    color: #2ECC71;
+    text-decoration: none;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    font-size: 12px;
+    color: #555;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+}
+#language-selector {
+    margin-bottom: 10px;
+}
+
+.friends-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fragments-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Novo estilo para padding nos campos */
+.friends-box, .fragments-box {
+    padding: 15px;
+    word-wrap: break-word;
+    overflow: auto;
+}

@@ -1,0 +1,161 @@
+/*
+* Estilos para a página de cadastro (criacao-conta.css)
+* Baseado em index.css para manter a consistência visual
+*/
+
+/* ===============================
+* Geral
+* =============================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* ===============================
+  * Seções principais (header e form)
+  * =============================== */
+  .header-section {
+    background-color: #C3EACB;
+    color: #0e3e20;
+  }
+  
+  .form-section {
+    background-color: #fff;
+  }
+  
+  /* ===============================
+  * Logo
+  * =============================== */
+  .logo {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  /* ===============================
+  * Título da página
+  * =============================== */
+  .form-section h2 {
+    font-size: 24px; /* Tamanho do título "Cadastro de Usuário" */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Centraliza o título */
+  }
+  
+  
+  /* ===============================
+  * Formulário
+  * =============================== */
+  form {
+    width: 100%; /* Garante que o formulário ocupe a largura total do .form-section */
+    max-width: 400px; /* Defina uma largura máxima para o formulário */
+    margin: 0 auto; /* Centraliza o formulário dentro do .form-section */
+  }
+  
+  .form-control {
+    /* Estilos dos campos de input do Bootstrap */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Aumentei um pouco o margin-bottom */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    /* Estilos dos campos de input quando clicados */
+    border-color: #2ECC71;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1); /* Cor da borda do botão */
+    outline: none;
+  }
+  
+  /* ===============================
+  * Botão de Criar Conta
+  * =============================== */
+  .btn-login {
+    /* Reutilizando o estilo do botão de login */
+    background-color: #2ECC71 !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Garante que o botão ocupe a largura total do formulário */
+    margin-top: 20px;
+  }
+  
+  .btn-login:hover {
+    background-color: #27ae60 !important;
+  }
+  
+  
+  /* ===============================
+  * Links do formulário
+  * =============================== */
+  .form-link {
+    color: #2ECC71;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .form-link:hover {
+    text-decoration: underline;
+  }
+  
+  .mt-3 {
+    margin-top: 1rem !important;
+  }
+  
+  .text-center{
+    text-align: center;
+  }
+  
+  /* ===============================
+  * Rodapé
+  * =============================== */
+  .footer {
+    background-color: #f1f1f1;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Adiciona espaço acima do rodapé */
+  }
+  .footer p{
+    margin-bottom: 0;
+  }
+  
+  /* ===============================
+  * Responsividade (Media Queries)
+  * =============================== */
+  
+  /* Para telas menores que 768px (smartphones e tablets pequenos) */
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .left-side,
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+  
+    .form-container {
+        margin-top: 20px;
+    }
+  }
+  
+  /* Para telas menores que 480px (smartphones muito pequenos) */
+  @media (max-width: 480px) {
+    .form-section h2{
+        font-size: 1.8rem;
+    }
+    form {
+        width: 95%;
+    }
+  }
+  

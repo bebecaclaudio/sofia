@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mistic Music Code Program</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/static/Volum.png" alt="Console Místico" class="background">
+        
+        <textarea id="editor" placeholder="Digite seu código musical aqui..."></textarea>
+        
+        <div class="buttons">
+            <button onclick="runCode()">▶</button>
+            <button onclick="saveCode()">💾</button>
+        </div>
+        
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function runCode() {
+            const code = document.getElementById("editor").value;
+            fetch("/execute", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ code: code })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("output").innerText = data.output;
+            });
+        }
+
+        function saveCode() {
+            const code = document.getElementById("editor").value;
+            const filename = prompt("Nome do arquivo:", "meu_codigo.py");
+            if (filename) {
+                fetch("/save", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ code: code, filename: filename })
+                })
+                .then(res => res.json())
+                .then(data => alert(data.message));
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- Compare this snippet from mistic_console/templates/index.html: -->
+<!-- <img src="{{ url_for('static', filename='images/Volum.png') }}" alt="Console Místico" style="width: 250px;">               
+ -->
